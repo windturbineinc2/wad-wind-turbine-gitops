@@ -1,0 +1,15 @@
+app:
+  name: wad-wind-turbine-app
+  namespace: wad
+  cluster: .apps.berlin.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/WindTurbineInc2/wad-wind-turbine
+  org: WindTurbineInc2
+  name: wad-wind-turbine
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: wad/wind-turbine-app
+  tag: latest
